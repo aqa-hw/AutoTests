@@ -1,12 +1,12 @@
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import po.ArticlePage;
-import po.HistoryPage;
-import po.SearchPage;
+import po.wiki.ArticlePage;
+import po.wiki.HistoryPage;
+import po.wiki.SearchPage;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class MainClassTest extends BaseTest {
+public class WikiTest extends BaseTest {
 
     @Test(dataProvider = "search_provider", groups = {"Smoke"})
     void shouldBeUbisoftArticle(String search) {
