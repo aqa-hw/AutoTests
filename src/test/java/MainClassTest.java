@@ -6,7 +6,7 @@ import po.wiki.SearchPage;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class WikiTest extends BaseTest {
+public class MainClassTest extends BaseTest {
 
     @Test(dataProvider = "search_provider", groups = {"Smoke"})
     void shouldBeUbisoftArticle(String search) {
