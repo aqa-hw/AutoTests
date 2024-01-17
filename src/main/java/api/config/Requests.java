@@ -24,4 +24,19 @@ public class Requests {
                 .when()
                 .post(endpoint);
     }
+
+    public Response get(RequestSpecification specRequest, String endpoint) {
+        return given()
+                .spec(specRequest)
+                .when()
+                .get(endpoint);
+    }
+
+    public Response delete(RequestSpecification specRequest, String endpoint) {
+        return given()
+                .spec(specRequest)
+                .when()
+                .delete(endpoint);
+
+    }
 }

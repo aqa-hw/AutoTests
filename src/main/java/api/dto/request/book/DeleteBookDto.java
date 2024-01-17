@@ -1,15 +1,18 @@
-package api.dto.request;
+package api.dto.request.book;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Builder
+
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserRequest {
-    private String userName;
-    private String password;
+public class DeleteBookDto {
+
+    public String userId;
+    public String message;
+
 }
