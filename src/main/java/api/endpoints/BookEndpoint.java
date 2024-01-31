@@ -2,8 +2,8 @@ package api.endpoints;
 
 public enum BookEndpoint {
 
-    ADD_BOOK("/BookStore/v1/Books"), DELETE_BOOK("/BookStore/v1/Books/?UserId=");
-
+    ADD_BOOK("/BookStore/v1/Books"),
+    DELETE_BOOK("/BookStore/v1/Books?UserId=");
 
     private final String book;
 
@@ -12,9 +12,6 @@ public enum BookEndpoint {
     }
 
     public String getBook() {
-        return book;
-    }
-    public String deleteBook(){
         return book;
     }
 }

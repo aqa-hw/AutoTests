@@ -32,11 +32,10 @@ public class Requests {
                 .get(endpoint);
     }
 
-    public Response delete(RequestSpecification specRequest, String endpoint) {
+    public Response delete(RequestSpecification specification, String endpoint) {
         return given()
-                .spec(specRequest)
+                .spec(specification)
                 .when()
                 .delete(endpoint);
-
     }
 }
