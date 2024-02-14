@@ -1,6 +1,7 @@
 package ui.selenide.po;
 
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 import ui.selenide.entities.User;
 
 import static com.codeborne.selenide.Condition.enabled;
@@ -17,6 +18,7 @@ public class LoginPage {
 
     private final SelenideElement loginButton = $x("//li[@id='pt-login']");
 
+    @Step("Try to auth with - {user}")
     public LoginPage auth(User user) {
         login.shouldBe(visible).sendKeys(user.getUsername());
         password.shouldBe(visible).sendKeys(user.getPassword());
@@ -24,6 +26,7 @@ public class LoginPage {
         return page(LoginPage.class);
     }
 
+    @Step("Click login")
     public LoginPage clickLogin() {
         loginButton.shouldBe(visible, enabled).click();
         return page(LoginPage.class);
