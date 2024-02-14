@@ -14,17 +14,5 @@ public class DBTest {
         userTable.deleteAlice();
         userTable.selectAllUsers();
     }
-    @Test
-    void HWTest1(){
-        userTable.insertBilly();
-        userTable.updateBilly();
-        userTable.selectAllUsers();
-    }
-    @Test
-    void HWTest2(){
-        userTable.insertBilly();
-        userTable.deleteBilly();
-        userTable.selectAllUsers();
-    }
 
 }

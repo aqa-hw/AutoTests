@@ -17,7 +17,6 @@ public class Crud {
         System.out.println("Update was successful");
     }
 
-
     protected void delete(String sql) {
         operator(sql);
         System.out.println("Delete was successful");
