@@ -16,10 +16,8 @@ public class Config {
     }
     private static final BaseConfig config = create(BaseConfig.class, getProperties());
     private static final String DB_URL = config.urlDB();
-    private static final String DB_USER = "postgres";
-//            System.getProperty("usernameDB");
-    private static final String DB_PASSWORD = "postgres";
-//        System.getProperty("passwordDB");
+    private static final String DB_USER = System.getProperty("usernameDB");
+    private static final String DB_PASSWORD = System.getProperty("passwordDB");
     private static Statement statement = null;
     private static Connection connection = null;
 

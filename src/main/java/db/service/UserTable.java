@@ -19,17 +19,6 @@ public class UserTable extends Crud {
         delete("DELETE FROM USERS WHERE name='Alice'");
     }
 
-    public void insertBilly(){
-        insert("INSERT INTO USERS (name, age) VALUES ('Billy', 99)");
-    }
-    public void updateBilly(){
-        update("UPDATE USERS SET name='Tommy' WHERE name='Billy'");
-    }
-    public void deleteBilly() {
-        delete("DELETE FROM USERS WHERE name='Billy'");
-    }
-
-
     @SneakyThrows
     public void selectAllUsers() {
         var rs = select("SELECT * FROM USERS");
