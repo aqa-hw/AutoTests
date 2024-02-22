@@ -11,12 +11,17 @@ public class ArticleService {
                 .clickFirstArticle()
                 .getArticleName();
     }
-    public ArticlePage getArticle(){
-        return articlePage
+
+    public void clickArticle() {
+        articlePage
                 .clickFirstArticle();
     }
-    public String getArticleHeader(){
-        return articlePage
-                .getArticleHeader();
+    public void clickMoreTopRead(){
+        articlePage
+                .clickElementMoreTopRead();
+    }
+    public void clickValentineArticle(){
+        articlePage
+                .clickValentineArticle();
     }
 }
